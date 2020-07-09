@@ -2,6 +2,13 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  var swiper = new Swiper('.swiper-container', {
+    autoplay: {
+      delay: 3000,
+    },
+  });
+  new WOW().init();
+
   //Получение данных из БД Асинхронная функция
   const getData = async function (url) {
       const response = await fetch(url); 
