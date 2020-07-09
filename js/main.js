@@ -1,13 +1,13 @@
 'use strict';
+new WOW().init();
+
+var swiper = new Swiper('.swiper-container', {
+  autoplay: {
+    delay: 3000,
+  },
+});
 
 document.addEventListener('DOMContentLoaded', () => {
-
-  var swiper = new Swiper('.swiper-container', {
-    autoplay: {
-      delay: 3000,
-    },
-  });
-  new WOW().init();
 
   //Получение данных из БД Асинхронная функция
   const getData = async function (url) {
