@@ -1,7 +1,5 @@
-new WOW().init();
-
 'use strict';
-
+new WOW().init();
 var swiper = new Swiper('.swiper-container', {
   autoplay: {
     delay: 3000,
