@@ -1,8 +1,10 @@
 'use strict';
 new WOW().init();
 var swiper = new Swiper('.swiper-container', {
+  loop: true,
   autoplay: {
     delay: 3000,
+    disableOnInteraction: false
   },
 });
 
